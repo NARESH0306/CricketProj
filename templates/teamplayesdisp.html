@@ -1,0 +1,115 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<style>
+.tdStyle
+{
+background-image:url('{{ STATIC_URL }}images/sample.JPG');
+background-repeat:no-repeat;
+background-size:100%;
+}
+
+.bg
+    {
+        width:100%;
+        height:100%;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        z-index:-1;
+    }
+  th
+    {
+    font-size:19px;
+    color:black;
+    }
+   td
+    {
+    font-size:19px;
+    color:red;
+    }
+    table
+    {
+    margin-left:10px;
+    }
+</style>
+<div>
+    <img class="bg" src="{% static 'images/lightback.jpeg' %}">
+</div>
+
+<h2 style="margin-top:150px;color:white;margin-left:600px;font-size:20px"><b>List of Players </b></h2>
+ <table border="1" bordercolor="#aaa" cellspacing="0" cellpadding="0">
+        <thead>
+            <th>First name</th>
+            <th>Last name</th>
+            <th>Jersy number</th>
+            <th>Country</th>
+            <th>Total Matches</th>
+            <th>Total u</th>
+            <th>Highest Score</th>
+            <th>Fiftys</th>
+            <th>Hundreds</th>
+            <th>man of the matches</th>
+            <th>win matches</th>
+            <th>Photo</th>
+            <th>flag</th>
+
+        </thead>
+        {% for player in form %}
+        <tr>
+            <td>{{player.first_name}}</td>
+            <td>{{player.last_name}}</td>
+            <td>{{player.jersy_number}}</td>
+            <td>{{player.country}}</td>
+            <td>{{player.total_matches}}</td>
+            <td>{{player.total_runs}}</td>
+            <td>{{player.highest_score}}</td>
+            <td>{{player.fiftys}}</td>
+            <td>{{player.hundreds}}</td>
+            <td>{{player.man_of_the_matches}}</td>
+            <td>{{player.winner_of_matches}}</td>
+            <td style="width:100px; height:100px">
+            <img style="display:block;" width="100%" height="100%"src="{{player.image.url}}"/></td>
+            <td style="width:100px; height:100px;">
+              <img style="display:block;" width="100%" height="100%"src="{{player.flag.url}}"/></td>
+            <!--<img src="{{player.flag.url}}"style="max-height:10%; max-width:10%"/></td>-->
+
+
+
+        </tr>
+        {% endfor %}
+    </table>
+</h2>
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

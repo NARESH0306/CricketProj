@@ -1,0 +1,56 @@
+{% load static %}
+
+{% block content %}
+<style>
+      img
+    {
+        width:100%;
+        background-size:cover;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        z-index:-1;
+    }
+
+    form
+    {
+        margin-left:600px;
+        font-weight:bold;
+    }
+
+    label
+    {
+    color:white;
+    }
+
+    .form-cls
+    {
+    font-size:20px;
+    }
+
+    form label
+    {
+    color:black;
+    margin-left:10px;
+    }
+
+</style>
+
+
+<h1 style=";color:black;margin-left:430px;margin-top:200px;">Admin authenticate form page</h1>
+
+<div>
+    <img src="{% static 'images/Cricket-bat-ball.jpg' %}">
+</div>
+
+<form class="form-cls" action="{% url 'adminloginaction' %}" method="post">
+    {% csrf_token %}
+    <label>Username </label><br>
+    <input type="text" name="username"><br>
+    <label>Password</label><br>
+    <input type="password" name="password"><br><br>
+    <input type="submit" value="submit"
+           style="margin-left:30px;color:white;border-radius:5px;background-color:transparent;font-size:17px;color:black;">
+</form>
+
+{% endblock %}

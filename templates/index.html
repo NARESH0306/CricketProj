@@ -1,0 +1,197 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<!--<style>-->
+<!--.container_img {-->
+<!--  position: relative;-->
+<!--  font-family: Arial;-->
+<!--}-->
+
+<!--.text-block {-->
+<!--  position: absolute;-->
+<!--  bottom: 1px;-->
+<!--  left:90px;-->
+<!--  color: white;-->
+<!--}-->
+
+<!--.container_img img-->
+<!--{-->
+<!--  border-radius: 50px 5px;-->
+<!--}-->
+<!--</style>-->
+
+<div id="wrapper">
+    <section class="visual">
+        <div class="container">
+            <div class="text-block">
+                <div class="heading-holder">
+                    <h1>CrickNews</h1>
+                </div>
+                <p class="tagline">Your News On Time </p>
+                <span class="info">Get motivated now</span>
+            </div>
+        </div>
+        <img src="{% static 'images/big_front_img.jpg' %}" alt="" class="bg-stretch" style="width:100%">
+    </section>
+    <section class="main">
+        <div class="container">
+            <div id="cta">
+                <a href="javascript:" class="btn btn-primary rounded">Every day is a challenge, change the life now.</a>
+            </div>
+            <div class="row">
+                <div class="text-box col-md-offset-1 col-md-10">
+                    <h2>Welcome To CrickNews</h2>
+                    <p>Todays Special</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="area" style="margin-top:-90px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <ul class="visual-list">
+                        <li>
+                            <div class="text-holder">
+                                <h3><a href="#">Mens World Cup Digital Content</a></h3>
+                                <p>The growth in consumption along with these record-breaking numbers demonstrate the
+                                    power of cricket to bring together an enormous global audience," says ICC Chief
+                                    Executive Manu Sawhney.<br><small><a href="#">Click Link for full story </a>
+                                    </small></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="text-holder">
+                                <h3><a href="#">Virat Kohli gives his take on playing IPL behind closed doors </a></h3>
+                                <p>Indian cricket team’s skipper Virat Kohli has given his take on the prospect of
+                                    playing matches in empty stadiums as the swashbuckling right-handed batsman
+                                    said.<br><small><a href="#">Click Link for full story </a> </small></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="text-holder">
+                                <h3><a href=""> Megan Schutt braced for women's game to feel impact of Covid-19 </a>
+                                </h3>
+                                <p>Australia pace bowler Megan Schutt has called on the women's game to be treated
+                                    fairly when it comes to potential cuts in the wake of the Covid-19 pandemic but
+                                    accepts it is inevitable that the impact will be felt.<br><small><a href="#">Click
+                                        Link for full story </a> </small></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="text-holder">
+                                <h3><a href="">Rohit Sharma hoping India's tour of Australia goes ahead</a></h3>
+                                <p>Before COVID-19 brought cricket to a halt, India were scheduled to tour Australia for
+                                    a full series towards the end of 2020. <br><small><a href="#">Click Link for full
+                                        story </a> </small></p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-7">
+                    <div class="slide-holder">
+                        <div class="img-slide scroll-trigger"><img src="{% static 'images/Today_Spl_img_big_1.jpg' %}"
+                                                                   height="624" width="684" alt=""
+                                                                   style="border-radius:5px;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button style="margin-left:130px;padding:7px;border-radius:10px;background-color:;"><a href="#"><b>Load More</b></a>
+        </button>
+    </section>
+
+    <section class="visual-container">
+        <div class="visual-area">
+            <div class="container-fluid">
+                <ul class="testimonials">
+                    <li>
+                        <h3 style="margin-left:">Live Scores</h3>
+                        <iframe width="530" height="351" src="https://www.youtube.com/embed/riP6Fp3W0LI" frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                    </li>
+                    <li>
+                        <div class="container_img">
+                            <img src="{% static 'images/Vote_img.jpg' %}" style="margin-top:70px;border-radius: 50px 5px;">
+                            <div class="text-block">
+                                <p style="font-size:20px;"><b><span style="color:red;">ICC Play</span> of the <span
+                                        style="color:red;">Tournament </span></b> <br><b>Vote for your favourite moment
+                                    of #CWC19!</b>
+                                    <br>
+                                    <button style="margin-left:-200px;color:black;border-radius:10px;">
+                                        <b><a href="#"> <i class="fa fa-thumbs-o-up"></i> <span
+                                                style="margin-left:5px;"> Vote for a
+                                            Vid Now </span> </a></b></button>
+                                </p>
+                            </div>
+                        </div>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="main-zero-padd" style="margin-top:-70px;">
+        <img src="images/video-placeholder.jpg" alt="" style="max-width:100%;"/>
+    </section>
+
+    <section class="area">
+        <div class="container">
+            <div class="subscribe">
+                <h3>Subscribe to Our Newsletter</h3>
+                <form class="form-inline">
+                    <button type="submit" class="btn btn-primary rounded">Subscribe</button>
+                    <div class="form-group">
+                        <input type="email" class="form-control rounded" id="exampleInputEmail2" placeholder="Email...">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-holder">
+                <div class="row  text-center">
+                    <div class="col-md-12">
+                        <div class="logo"><a href="#"><img src="{% static 'images/main_logo_1.png' %}" alt="Sports"
+                                                           style="width:100px;height:100px;margin-top:-25px;margin-left:500px;"></a>
+                            <p style="color:black;margin-left:520px;"><b>CrickNews</b></p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div id="cta" class="cta-footer">
+                        <a href="javascript:" class="btn btn-primary rounded">Be Home Be safe..</a>
+                        <p>Every day is a challenge, change your life now.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3>We live your galaxy</h3>
+
+<!--                        Admin-->
+                        <p>Authorised Person Only <span><button
+                                style="margin-left:10px;padding:5px;border-radius:10px;"><a
+                                href="{% url 'adminauth' %}"> Admin </a></button></span></spa></p>
+                    </div>
+
+                    <div class="col-md-6 text-right">
+                        <ul class="social">
+                            <li><a href="javascript:"><i class="fa fa-facebook-f"></i></a></li>
+                            <li><a href="javascript:"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="javascript:"><i class="fa fa-dribbble"></i></a></li>
+                            <li><a href="javascript:"><i class="fa fa-pinterest"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+{% endblock %}
